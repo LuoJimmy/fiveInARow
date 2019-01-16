@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-box">
+            <span class="title">双人对战</span>
+            <span class="winner-text"></span>
+        </div>
+        <div class="chessboard">
+            <canvas id="canvas">您的不支持canvas</canvas>
+        </div>
+        <div class="buttons">
+            <input type="button" value="双人对战" onclick="changeMode(0)" id="doubleMan" disabled="disabled"/>
+            <input type="button" value="人机对战" onclick="changeMode(1)" id="manComputer"/>
+            <input type="button" value="悔棋" onclick="undo(0)" id="undo" class="undo defaultUndo"/>
+            <input type="button" value="白子悔棋" onclick="undo(1)" id="whiteUndo" class="undo whiteUndo" disabled="disabled"/>
+            <input type="button" value="黑子悔棋" onclick="undo(2)" id="blackUndo" class="undo blackUndo" disabled="disabled"/>
+            <input type="button" value="撤销悔棋" onclick="revertUndo()" id="revertUndo" disabled="disabled"/>
+            <input type="button" value="再来一局" onclick="gameAgain()"/>
+            <input type="button" value="退出游戏" onclick="gameQuit()"/>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

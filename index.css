@@ -1,0 +1,26 @@
+.container {
+    margin: 0 auto;
+}
+
+.title-box {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.winner-text {
+    color: red;
+}
+
+.chessboard {
+    margin: 0 auto;
+    background: url("imgs/chessborad-bg.jpg");
+}
+
+.buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.defaultUndo {
+    display: none;
+}
